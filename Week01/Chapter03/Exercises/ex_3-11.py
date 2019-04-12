@@ -26,4 +26,3 @@ for i in range(5):
     star.right(72)
 
 wn.mainloop()
-
