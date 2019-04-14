@@ -1,4 +1,5 @@
-from decimal import *
+import calendar
+import datetime
 
 ''' The Weekly challenge of Acceleration Python for Web '''
 class CloudCost():
@@ -21,16 +22,7 @@ class CloudCost():
             - Calculate how many executions was made in a specific month
               NOTE: The execution times is about how many executions was made per day
         '''
-        month_with_31_days = [1, 3, 5, 7, 8, 10, 12]
-
-        days = 0  # number of days in a month
-        if month_of_year == 2:
-            days = 28
-        elif month_of_year in month_with_31_days:
-            days = 31
-        else:
-            days = 30
-
+        days = calendar.monthrange(datetime.datetime.now().year, month_of_year)[1]
         return self.app_execution(execution_times * days)
 
     def year(self, execution_times):
@@ -43,7 +35,7 @@ class CloudCost():
 
     def time_execution(self):
         ''' Para fins de cálculo vamos considerar que o tempo de execução de cada função é de 3 segundos '''
-        return 3
+        return 3.0
 
 if __name__ == '__main__':
     cc = CloudCost()
