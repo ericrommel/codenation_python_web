@@ -14,4 +14,4 @@ test_submit.py::EmailValidTests::test_three PASSED                       [ 87%]
 test_submit.py::EmailValidTests::test_two PASSED                         [100%]
 
  generated xml file: C:\Users\eric.dantas\codenation\validador-emails-python\output.xml 
-========================== 8 passed in 0.08 seconds ===========================
+========================== 8 passed in 0.09 seconds ===========================
